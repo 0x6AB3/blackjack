@@ -20,5 +20,10 @@ namespace blackjack
         {
             InitializeComponent();
         }
+
+        private void PlayGame(int bet)
+        {
+
+        }
     }
 }
