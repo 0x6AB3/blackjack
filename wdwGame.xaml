@@ -1,0 +1,65 @@
+﻿<Window x:Class="blackjack.wdwGame"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:blackjack"
+        mc:Ignorable="d"
+        Title="Blackjack: Play!" Height="900" Width="1428">
+    <Grid x:Name="grdGame" Height="890" VerticalAlignment="Top">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black"/>
+                <GradientStop Color="White" Offset="1"/>
+                <GradientStop Color="#FF949494" Offset="0"/>
+                <GradientStop Color="#FFDADADA" Offset="0.221"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label x:Name="lblBalance" Content="Balance £0" HorizontalAlignment="Left" Margin="28,653,0,0" VerticalAlignment="Top" Width="568" FontFamily="Global Monospace" FontSize="48"/>
+        <Button x:Name="btnHit" Content="Hit" HorizontalAlignment="Left" Margin="1129,721,0,0" VerticalAlignment="Top" Height="105" Width="271" FontFamily="Global Monospace" FontSize="36">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="White"/>
+                    <GradientStop Color="#FF46BB3C" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnStand" Content="Stand" HorizontalAlignment="Left" Margin="854,721,0,0" VerticalAlignment="Top" Height="105" Width="270" FontFamily="Global Monospace" FontSize="36">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="White"/>
+                    <GradientStop Color="#FFBB3C3C" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnDoubleDown" Content="Double down" HorizontalAlignment="Left" Margin="579,721,0,0" VerticalAlignment="Top" Height="105" Width="270" FontFamily="Global Monospace" FontSize="36">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="White"/>
+                    <GradientStop Color="#FF3C44BB" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnSplit" Content="Split" HorizontalAlignment="Left" Margin="304,721,0,0" VerticalAlignment="Top" Height="105" Width="270" FontFamily="Global Monospace" FontSize="36">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="White"/>
+                    <GradientStop Color="#FF3CACBB" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnInsurance" Content="Insurance" HorizontalAlignment="Left" Margin="28,721,0,0" VerticalAlignment="Top" Height="105" Width="271" FontFamily="Global Monospace" FontSize="36">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="White"/>
+                    <GradientStop Color="#FFBABB3C" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Label x:Name="lblDealerCards" Content="Dealer's cards:" HorizontalAlignment="Left" Margin="575,37,0,0" VerticalAlignment="Top" Width="226" FontFamily="Global Monospace" FontSize="24"/>
+        <Rectangle HorizontalAlignment="Left" Height="380" Margin="307,37,0,0" Stroke="Black" VerticalAlignment="Top" Width="762"/>
+        <Image x:Name="pbxDealerCardLeft" HorizontalAlignment="Left" Height="306" Margin="444,81,0,0" VerticalAlignment="Top" Width="242" Source="/BackCard.jpg" RenderTransformOrigin="0.468,-0.539"/>
+        <Image x:Name="pbxDealerCardRight" HorizontalAlignment="Left" Height="306" Margin="714,81,0,0" VerticalAlignment="Top" Width="242" Source="/BackCard.jpg" RenderTransformOrigin="0.468,-0.539"/>
+
+    </Grid>
+</Window>

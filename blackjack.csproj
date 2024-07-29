@@ -8,4 +8,12 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="BackCard.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="BackCard.jpg" />
+  </ItemGroup>
+
 </Project>
